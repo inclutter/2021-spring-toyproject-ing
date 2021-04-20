@@ -18,9 +18,9 @@ spring:
 
   datasource:
     driver-class-name: org.postgresql.Driver
-    url: jdbc:postgresql://183.101.136.74:5444/postgres
-    username: postgres
-    password: ENC(KPEumznakuskZVMbz3hDiF0zIypNLCU5)
+    url: ENC(53SLYc5CWrvHEBmJ8dQMN6YU3CDI9QJQ367jAnoAAatwHY5O901PNUL3qsnGawJ4jyPOCygeCCs=)
+    username: ENC(OBpS+CdaA8IFDkHuMri4HOKUIG8iAAe3)
+    password: ENC(Tq1VER9f2xFFwhiQ53txm5lwdtqTbxGg)
 
 jasypt:
   encryptor:
