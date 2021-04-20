@@ -5,7 +5,7 @@ server:
 
 spring:
   application:
-    2021-spring-toryproject
+    2021-spring-toyproject
 
   http:
     multipart:
@@ -17,4 +17,4 @@ spring:
       enabled: always
 
   datasource:
-    data-username: 
+    data-username:
