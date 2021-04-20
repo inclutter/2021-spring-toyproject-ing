@@ -20,4 +20,14 @@ spring:
     driver-class-name: org.postgresql.Driver
     url: jdbc:postgresql://183.101.136.74:5444/postgres
     username: postgres
-    password: 1qaz2wsx
+    password: ENC(KPEumznakuskZVMbz3hDiF0zIypNLCU5)
+
+jasypt:
+  encryptor:
+    bean: jasyptStringEncryptor
+    property:
+      prefix: ENC(
+      suffix: )
+
+
+
