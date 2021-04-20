@@ -17,4 +17,7 @@ spring:
       enabled: always
 
   datasource:
-    data-username:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://183.101.136.74:5444/postgres
+    username: postgres
+    password: 1qaz2wsx
