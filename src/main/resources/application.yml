@@ -25,7 +25,7 @@ spring:
     driver-class-name: org.postgresql.Driver
     url: ENC(53SLYc5CWrvHEBmJ8dQMN6YU3CDI9QJQ367jAnoAAatwHY5O901PNUL3qsnGawJ4jyPOCygeCCs=)
     username: ENC(OBpS+CdaA8IFDkHuMri4HOKUIG8iAAe3)
-    password: ENC(ZFERGrKPF7Q3hM1p3pn3Jd4ysBKKM7mdxbk6rGTnjNY=)
+    password: ENC(zhN+Fs9PuJhRttA2PdbinNJWIt94Qhva)
 
 
 jasypt:
