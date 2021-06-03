@@ -26,6 +26,17 @@ spring:
     url: ENC(53SLYc5CWrvHEBmJ8dQMN6YU3CDI9QJQ367jAnoAAatwHY5O901PNUL3qsnGawJ4jyPOCygeCCs=)
     username: ENC(OBpS+CdaA8IFDkHuMri4HOKUIG8iAAe3)
     password: ENC(zhN+Fs9PuJhRttA2PdbinNJWIt94Qhva)
+    tomcat:
+      remove-abandoned: true
+      remove-abandoned-timeout: 120
+      log-abandoned: true
+      max-active: 50
+      max-idle: 10
+      max-wait: 1000
+      #validation-query: "select 1"
+      #test-on-borrow: true
+      #test-on-connect: true
+      test-while-idle: true
 
 
 jasypt:

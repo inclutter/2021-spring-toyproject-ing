@@ -1,4 +1,4 @@
-package com.study.toypro.common.dto;
+package com.study.toypro.core.base.model;
 
 import java.io.IOException;
 import java.io.InputStream;

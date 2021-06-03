@@ -1,4 +1,4 @@
-package com.study.toypro.core.base;
+package com.study.toypro.core.base.service;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.slf4j.Logger;
