@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.study.toypro.api.user.mapper.ExternalApiMapper">
+    <resultMap id="selectExternalApiResponseResult" type="svcTypeDto">
+        <result property="apiResJson" column="api_res_json"/>
+    </resultMap>
+    <select id="selectExternalApiResponse" parameterType="String">
+        SELECT
+            api_res_json
+        FROM
+            ext_api_response
+        WHERE
+            svc_type = #{svcType};
+    </select>
+</mapper>

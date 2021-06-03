@@ -1,14 +1,12 @@
 package com.study.toypro.api.user.dto;
 
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
-import lombok.ToString;
+import lombok.*;
 import org.apache.ibatis.type.Alias;
 
 
 @Alias("userRoleDto")
 @NoArgsConstructor
+@Data
 public class UserRoleDto {
     public String userId; // 유저 아이디
 

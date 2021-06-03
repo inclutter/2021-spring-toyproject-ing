@@ -16,6 +16,7 @@
 
     <typeAliases>
         <package name="com.study.toypro.api.user.dto"/>
+        <package name="com.study.toypro.api.external.dto"/>
     </typeAliases>
 
 </configuration>
