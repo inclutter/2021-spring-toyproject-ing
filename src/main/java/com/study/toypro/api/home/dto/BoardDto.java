@@ -1,8 +1,8 @@
-package com.study.toypro.api.home.model;
+package com.study.toypro.api.home.dto;
 
 import java.util.Date;
 
-public class BoardVO {
+public class BoardDto {
     private int seq;
     private String title;
     private String writer;
