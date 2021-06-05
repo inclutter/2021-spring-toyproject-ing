@@ -2,11 +2,16 @@ package com.study.toypro.api.external.dto;
 
 import lombok.Data;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.apache.ibatis.type.Alias;
 
-@Alias("svcTypeDto")
+/**
+ * 전달받은 svcType Mybatis로 전달하는 Dto 객체
+ */
 @Data
+@Alias("svcTypeDto")
+@NoArgsConstructor
 public class SvcTypeDto {
     public String svcType; // 서비스 타입
 
