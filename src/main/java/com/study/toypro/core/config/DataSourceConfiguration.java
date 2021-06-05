@@ -48,7 +48,7 @@ public class DataSourceConfiguration {
         return source;
     }
 
-    // push test
+    // push test1
     @Bean(name = "sqlSessionFactory")
     public SqlSessionFactory sqlSessionFactory(@Qualifier("dataSource") DataSource dataSource, ApplicationContext applicationContext) throws Exception {
         SqlSessionFactoryBean sessionFactoryBean = new SqlSessionFactoryBean();
