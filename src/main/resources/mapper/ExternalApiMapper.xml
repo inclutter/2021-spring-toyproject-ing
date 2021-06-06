@@ -11,6 +11,10 @@
         FROM
             ext_api_response
         WHERE
-            svc_type = #{svcType};
+            svc_type = #{svcType}
+        AND
+            prprty_id = #{prprtyId}
+        AND
+            room_no = #{roomNo}
     </select>
 </mapper>

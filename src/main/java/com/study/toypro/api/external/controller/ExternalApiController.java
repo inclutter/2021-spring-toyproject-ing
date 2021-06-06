@@ -21,10 +21,11 @@ public class ExternalApiController {
      */
     @PostMapping("/v1/services")
     public String selectExternalApiResponse(@RequestBody ReqDto reqDto) {
-        System.out.println(reqDto.toString());
         SvcTypeDto svcTypeDto = new SvcTypeDto();
+        svcTypeDto.setPrprtyId(reqDto.getPrprtyId());
+        svcTypeDto.setRoomNo(reqDto.getRoomNo());
         svcTypeDto.setSvcType(reqDto.getReqData().get(0).getSvcType());
-        SvcTypeDto svcTypeDto1 = externalApiService.selectExternalApiResponse(svcTypeDto);
-        return svcTypeDto1.getApiResJson();
+        SvcTypeDto result = externalApiService.selectExternalApiResponse(svcTypeDto);
+        return result.getApiResJson();
     }
 }

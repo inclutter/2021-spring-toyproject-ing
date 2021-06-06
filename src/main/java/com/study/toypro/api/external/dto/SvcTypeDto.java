@@ -16,4 +16,8 @@ public class SvcTypeDto {
     public String svcType; // 서비스 타입
 
     public String apiResJson; // 외부 API 응답전문
+
+    public String prprtyId; // 프로퍼티 아이디
+
+    public String roomNo; // 방 번호
 }
