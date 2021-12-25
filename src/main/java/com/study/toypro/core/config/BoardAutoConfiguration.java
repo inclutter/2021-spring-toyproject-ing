@@ -1,6 +1,6 @@
 package com.study.toypro.core.config;
 
-import com.study.toypro.core.util.JDBCConnectionManager;
+import com.study.toypro.core.utilities.JDBCConnectionManager;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Bean;

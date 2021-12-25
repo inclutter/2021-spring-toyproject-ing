@@ -1,4 +1,4 @@
-package com.study.toypro.core.util;
+package com.study.toypro.core.utilities;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
