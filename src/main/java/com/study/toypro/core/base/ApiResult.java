@@ -9,6 +9,9 @@ public class ApiResult<T> {
 
     private String ttsMsg;
 
+    public ApiResult(String resltCd) {
+        this.resltCd = resltCd;
+    }
 
     public ApiResult(String resltCd, String resltMsg) {
         this.resltCd = resltCd;

@@ -3,8 +3,9 @@ package com.study.toypro.api.external.controller;
 import com.study.toypro.api.external.dto.ReqDto;
 import com.study.toypro.api.external.dto.SvcTypeDto;
 import com.study.toypro.api.external.service.ExternalApiService;
+import com.study.toypro.core.utilities.ApiResponseUtility;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
@@ -20,12 +21,12 @@ public class ExternalApiController {
      * @return
      */
     @PostMapping("/v1/services")
-    public String selectExternalApiResponse(@RequestBody ReqDto reqDto) {
+    public ResponseEntity<Object> selectExternalApiResponse(@RequestBody ReqDto reqDto) {
         SvcTypeDto svcTypeDto = new SvcTypeDto();
         svcTypeDto.setPrprtyId(reqDto.getPrprtyId());
         svcTypeDto.setRoomNo(reqDto.getRoomNo());
         svcTypeDto.setSvcType(reqDto.getReqData().get(0).getSvcType());
         SvcTypeDto result = externalApiService.selectExternalApiResponse(svcTypeDto);
-        return result.getApiResJson();
+        return ApiResponseUtility.success(result);
     }
 }
