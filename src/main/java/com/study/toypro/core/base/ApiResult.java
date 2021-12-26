@@ -7,8 +7,6 @@ public class ApiResult<T> {
 
     private T resltData;
 
-    private String ttsMsg;
-
     public ApiResult(String resltCd) {
         this.resltCd = resltCd;
     }
@@ -28,7 +26,6 @@ public class ApiResult<T> {
         this.resltCd = resltCd;
         this.resltMsg = resltMsg;
         this.resltData = resltData;
-        this.ttsMsg = ttsMsg;
     }
 
     public String getResltCd() {
@@ -53,13 +50,5 @@ public class ApiResult<T> {
 
     public void setResltData(T resltData) {
         this.resltData = resltData;
-    }
-
-    public String getTtsMsg() {
-        return ttsMsg;
-    }
-
-    public void setTtsMsg(String ttsMsg) {
-        this.ttsMsg = ttsMsg;
     }
 }

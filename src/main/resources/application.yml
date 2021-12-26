@@ -38,6 +38,11 @@ spring:
       #test-on-connect: true
       test-while-idle: true
 
+  messages:
+    basename: classpath:/messages/messages
+    encoding: UTF-8
+
+
 
 jasypt:
   encryptor:

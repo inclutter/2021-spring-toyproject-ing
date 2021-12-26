@@ -15,6 +15,5 @@ import java.util.List;
 @NoArgsConstructor
 public class ReqDataDto {
     private String svcType; // 서비스 타입
-
     private List<ReqPrprtysDataDto> scvevtPrprtys = new ArrayList<>(); // 요청 프로퍼티 데이타 리스트
 }
