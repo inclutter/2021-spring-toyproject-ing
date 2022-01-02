@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-@RestController
+//@RestController
 public class HomeController {
     @GetMapping("/")
     public String index() {

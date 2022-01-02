@@ -1,6 +1,7 @@
 package com.study.toypro.core.config;
 
 import com.study.toypro.core.utilities.JDBCConnectionManager;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Bean;
@@ -22,9 +23,13 @@ public class BoardAutoConfiguration {
     @Value("${spring.datasource.password}")
     String password;
 
+    @Autowired
+    JDBCConnectionManagerProperties jdbcConnectionManagerProperties;
+
 
     @Bean
     public JDBCConnectionManager getJDBCConnectionManager() {
+        System.out.println(jdbcConnectionManagerProperties);
         JDBCConnectionManager manager = new JDBCConnectionManager();
         manager.setDriverClass(driverClassName);
         manager.setUrl(url);

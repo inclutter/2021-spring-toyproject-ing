@@ -42,7 +42,8 @@ spring:
     basename: classpath:/messages/messages
     encoding: UTF-8
 
-
+  main:
+    web-application-type: servlet
 
 jasypt:
   encryptor:
@@ -51,5 +52,12 @@ jasypt:
       prefix: ENC(
       suffix: )
 
+datasource:
+  driver-class: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
+  url: jdbc:log4jdbc:postgresql://183.101.136.74:5444/postgres
+  username: ENC(OBpS+CdaA8IFDkHuMri4HOKUIG8iAAe3)
+  password: ENC(zhN+Fs9PuJhRttA2PdbinNJWIt94Qhva)
 
-
+author:
+  name: TESTER
+  age: 53
